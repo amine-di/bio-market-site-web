@@ -1,0 +1,60 @@
+#produits{
+    display:flex;
+    flex-wrap:wrap;
+    width:80%;
+    margin:0 auto;
+    justify-content:space-evenly;
+}
+
+.produit{
+    padding:2px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    margin:1%;
+    min-width:190px;
+    max-height:250px;
+    cursor:pointer;
+}
+.produit img{
+    height:50%;
+    max-width:80px;
+}
+
+.produit .nom{
+    color:#1f4567;
+    font-weight:bold;
+}
+.produit .prix{
+    color:#845d3f;
+    font-weight:bold;
+}
+
+.produit:hover{
+    box-shadow:0 0 8px;
+}
+
+#categorieNav{
+    display:flex;
+    margin:0 0 5% 0;
+    color:white;
+    background-color:rgb(67, 134, 67);
+    padding:2% 0;
+    justify-content:space-around;
+    position:sticky;
+    top:0;
+}
+#categorieNav select{
+    width:30%;
+    border:none;
+}
+
+.ajoutBtn{
+    border:none;
+    width:100%;
+    background-color:#668D2C;
+    color:white;
+    font-weight:bold;
+    padding:2% 0;
+}

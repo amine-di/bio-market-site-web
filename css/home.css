@@ -1,0 +1,44 @@
+body,html{
+    height:100%;
+}
+body header h1{
+   height:10%;
+}
+#categorieListe{
+    margin:5% 0;
+}
+div#backImg{
+    height:50vh;
+    background-image: url('../images/background - Copie.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+#catPageTitle{
+    text-align:center;
+    font-style:italic;
+    margin:2% 0;
+}
+.cat{
+    width:70%;
+    margin:0 auto;
+    cursor:pointer;
+}
+
+.cat h2{
+    text-align:left;
+}
+.catTitle{
+    background-color:rgb(85, 141, 85);
+    color:white;
+    width:100%;
+}
+#categorieListe .cat div{
+    display:block;
+    width:100%;
+    height:30vh;
+    margin:0 auto;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}

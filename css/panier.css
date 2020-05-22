@@ -1,0 +1,74 @@
+.prodBox{
+    width:80%;
+    padding:3% 0;
+    margin:5% auto 0 auto;
+    display:flex;
+    justify-content:space-around;
+    max-height:500px;
+}
+.prodBox img{
+    max-width:200px;
+    max-height:250px;
+   
+}
+
+.infoBox{
+    max-width:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.prodName,.prodLabelValue{
+    font-size: 18px;
+    color: #333;
+    font-weight:bold;
+}
+
+.prodLabelValue{
+    font-style:italic;
+}
+.prodPrice{
+    font-size: 24px;
+    color: #825d3f;
+    font-weight:bold;
+}
+
+.crudBtn{
+    border:none;
+    width:60%;
+    background-color:#668D2C;
+    color:white;
+    font-weight:bold;
+    padding:2% 0;
+    margin:1% 0;
+}
+
+
+.panier-error-msg{
+    width:50%;
+    margin:5% auto 0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+#finaliserCommande{
+    display:block;
+    margin:5% auto 13% auto;
+    width:40%;
+    text-align:center;
+    height:8vh;
+    background-color:#21b24c;
+    color:white;
+    border:none;
+    font-weight:bold;
+}
+a{
+    text-decoration:none;
+}
+
+button#finaliserCommande.invisible{
+    display:none;
+}

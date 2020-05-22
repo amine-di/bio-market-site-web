@@ -1,0 +1,36 @@
+#commandeCombo{
+    display:block;
+    width:50%;
+    margin:0 auto;
+}
+h1{text-align:center;}
+#commandeInfo{
+    width:50%;
+    margin:5% auto 0 auto;
+}
+tr{
+    background-color:white;
+}
+table,td{border:1px solid black;}
+#commandeInfo table{
+    width:100%;
+    text-align:center;
+    margin:8% 0;
+    border-collapse:collapse;
+}
+#commandeInfo table tr{
+    height:5vh;
+}
+
+#t2 #tBody tr:nth-child(odd){
+    background-color:lightgreen;
+}
+
+th{
+    background-color:black;
+    color:white;
+}
+
+#t1 tr{
+    border:1px solid black;
+}
