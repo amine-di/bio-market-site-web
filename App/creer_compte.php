@@ -1,7 +1,7 @@
 <?php
 require('../db/fonctions_db.php');
 
-if(isset($_POST['creerBtn'])){
+if (isset($_POST['creerBtn'])) {
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
     $age = $_POST['age'];
@@ -12,14 +12,13 @@ if(isset($_POST['creerBtn'])){
     $ville = $_POST['ville'];
     $adresse = $_POST['adresse'];
 
-    if(!empty($nom) && !empty($prenom) && !empty($age) && !empty($email) && !empty($pwd) && !empty($telephone) && !empty($pays) && !empty($ville) && !empty($adresse)){
+    if (!empty($nom) && !empty($prenom) && !empty($age) && !empty($email) && !empty($pwd) && !empty($telephone) && !empty($pays) && !empty($ville) && !empty($adresse)) {
 
-        nouveauClient($nom,$prenom,$age,$email,$pwd,$telephone,$pays,$ville,$adresse);
+        nouveauClient($nom, $prenom, $age, $email, $pwd, $telephone, $pays, $ville, $adresse);
         header('Location: /bio_market/index.php');
-        
-    }else{
+    } else {
         header('Location: /bio_market/views/Error404.php?errorMsg=Veuillez remplir tous les champs SVP');
     }
-}else{
+} else {
     header('Location: /bio_market/index.php');
 }
