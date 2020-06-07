@@ -1,6 +1,7 @@
 h2{
     text-align:center;
 }
+/*
 form{
     width:80%;
     margin:0 auto;
@@ -14,4 +15,16 @@ form input{
     margin:1vh 0;
     height:5vh;
     padding:0 0 0 3px;
+}
+
+*/
+div.formContainer{
+    background-color:#343a40;
+    margin:5% auto 0 auto;
+    color:white;
+}
+@media only screen and (max-width: 964px) {
+    .formContainer{
+        width:100%!important;
+    }
 }

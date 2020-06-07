@@ -1,44 +1,78 @@
 body,html{
     height:100%;
 }
-body header h1{
-   height:10%;
-}
-#categorieListe{
-    margin:5% 0;
-}
+
 div#backImg{
-    height:50vh;
-    background-image: url('../images/background - Copie.jpg');
+    height:70vh;
+    background:linear-gradient(to bottom,rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.2)), url('../images/organic.jpg');
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
+    background-attachment: fixed;
+    display:flex;
+    justify-content:center;
+    color:white; 
 }
-#catPageTitle{
+div#backData{
+    margin-top:5%;
     text-align:center;
-    font-style:italic;
-    margin:2% 0;
 }
-.cat{
-    width:70%;
-    margin:0 auto;
-    cursor:pointer;
+div#backData h1{
+    font-size:5em;
+}
+#navbarNav ul li a{
+    color:white;
+    background-color:rgba(0, 0, 0,0.3);
+    margin:3px 5px;
+    text-align:center;
+    font-weight:bolder;
+    border-width:1px;
+    border-style:solid;
+    border-color:dodgerblue;
+    border-radius:5px;
+}
+#navbarNav ul li a:hover{
+    background-color:rgba(0, 0, 0,0.5);
 }
 
-.cat h2{
-    text-align:left;
+/* 
+#logo-img{
+    margin-right:20%;
+} */
+
+
+
+/* Portfolio section */
+
+.flex-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
 }
-.catTitle{
-    background-color:rgb(85, 141, 85);
-    color:white;
-    width:100%;
+
+.flex-item{
+    cursor: pointer;
 }
-#categorieListe .cat div{
-    display:block;
-    width:100%;
-    height:30vh;
-    margin:0 auto;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
+
+.flex-item img{
+    width:200px;
+    border:10px solid white;
+    transition:0.1s;
+}
+
+.flex-item img:hover{
+    border:10px solid rgb(61, 57, 57);
+}
+
+figcaption{
+    text-align:center;
+    font-weight:bold;
+}
+
+.cat-title{
+    text-align:center;
+    margin:2% 0;
+    font-style:italic;
+    text-decoration:underline;
+    text-decoration-color:dodgerblue;
 }

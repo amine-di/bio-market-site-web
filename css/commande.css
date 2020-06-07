@@ -1,3 +1,6 @@
+body{
+    background-image:linear-gradient(to bottom, white,white);
+}
 #info_produit_commande{
     display:flex;
     flex-wrap:wrap;
@@ -78,4 +81,34 @@
     color:white;
     border:none;
     font-weight:bold;
+}
+
+
+@media only screen and (max-width: 964px) {
+main{
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+main div div{
+    width:90%;
+}
+main #infoProduitCommande {
+    border-right:none;
+}
+#infoProduitCommande, #infoClientCommande{
+    width:90%;
+}
+form.createForm input, form.loginForm input{
+    width:90%;
+}
+#commandeInfo{
+    width:90%!important;
+}
+}
+
+.return{
+    display:block;
+    margin:0 auto;
+    width:40%;
 }

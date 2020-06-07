@@ -1,3 +1,6 @@
+body{
+    background-image:linear-gradient(to bottom,white,white);
+}
 #commandeCombo{
     display:block;
     width:50%;
@@ -8,7 +11,7 @@ h1{text-align:center;}
     width:50%;
     margin:5% auto 0 auto;
 }
-tr{
+/* tr{
     background-color:white;
 }
 table,td{border:1px solid black;}
@@ -33,4 +36,14 @@ th{
 
 #t1 tr{
     border:1px solid black;
+} */
+
+
+@media only screen and (max-width: 964px) {
+    #t1,#t2{
+        width:100%;
+    }
+    #commandeInfo{
+        width:100%;
+    }
 }

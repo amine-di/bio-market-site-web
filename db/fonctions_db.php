@@ -143,7 +143,7 @@ function ajouterLivreur($nom, $prenom, $age, $email, $telephone, $pays, $ville, 
 
     $pdo = db_connect();
     $pImage = "'" . $profileImg . "'";
-    $pdo->query("INSERT INTO livreur_demande(nom,prenom,adresse,email,pays,ville,telephone,statut,age,photo) VALUES('$nom','$prenom','$adresse','$email','$pays','$ville','$telephone','non_traite',$age,(SELECT * FROM OPENROWSET(BULK N$pImage, SINGLE_BLOB) as T1))");
+    $pdo->query("INSERT INTO livreur(nom,prenom,adresse,email,pays,ville,telephone,statut,age,photo) VALUES('$nom','$prenom','$adresse','$email','$pays','$ville','$telephone',0,$age,(SELECT * FROM OPENROWSET(BULK N$pImage, SINGLE_BLOB) as T1))");
 }
 
 

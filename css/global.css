@@ -1,192 +1,70 @@
 *{
-    margin:0;
-    padding:0;
-    font-family:sans-serif;
+    box-sizing:border-box;
 }
 
-button,input[type="submit"]{
-    cursor:pointer;
+
+body{
+    height:100%;
+    background-image:linear-gradient(to bottom,rgba(255, 255, 255,0.1),rgba(255, 255, 255,0.1)),url('../images/nature.jpg');
 }
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    height:20vh;
-    background-color:rgb(50, 117, 79);
+/* 
+.footerBox{
+    background-color:#6351ce;
+} */
+
+footer{
+    z-index:10;
+    margin:120px 0 0 0;
+}
+
+#navbarNav ul li a{
     color:white;
+    background-color:rgba(0, 0, 0,0.3);
+    margin:3px 5px;
+    text-align:center;
+    font-weight:bolder;
+    border-width:1px;
+    border-style:solid;
+    border-color:dodgerblue;
+    border-radius:5px;
+    font-weight:bolder;
 }
-header h1{
-    width:50%;
-    height:10%;
+#navbarNav ul li a:hover{
+    background-color:rgba(0, 0, 0,0.5);
 }
-#logo-img{
-    width:30vh;
-}
-nav{
-    width:60%;
-}
-nav ul{
-    
-    display:flex;
-    list-style:none;
-    justify-content:space-around;
-}
-nav a{
-    color:white;
-    text-decoration:none;
-}
-#bgMenu{
-    display:none;
-    width:40px;
-}
+
 
 #sessionBar{
-    background-color:seagreen;
-    color:white;
     position:fixed;
     bottom:0;
     left:0;
-    padding:5px;
+    background-color:rgba(0, 0, 0,0.5);
     display:flex;
-}
-#sessionBar a{
-    margin-left:5px;
+    justify-content:space-around;
+    align-items:center;
+    width:30%;
     color:white;
+    font-weight:bold;
 }
+#sessionBar p,a{
+    margin:0;
+}
+@media only screen and (max-width: 964px) {
+    #sessionBar{
+        width:100%;
+    }
+}
+
 .panier_session{
+    background-color:rgb(28, 35, 49);
+    color:white;
+    font-weight:bold;
     position:fixed;
-    min-width:8%;
     right:0;
     bottom:40%;
+    width:10%;
     display:flex;
     flex-direction:column;
-    background-color:#21b24c;
-    color:white;
-    padding:0 0 0 5px;
-    z-index:1;
-}
-.panier_session p{
-    height:5vh;
-    display:flex;
+    justify-content:center;
     align-items:center;
-}
-@media only screen and (max-width:885px){
-    nav{
-        align-self: flex-start;
-    }
-    nav ul{
-        display:none;
-        position:absolute;
-        background-color:rgb(117, 182, 117);
-        top:100%;
-        right:0;
-        width:30vh;
-    }
-    #logo-img{
-        width:20vh;
-        margin:0;
-    }
-    nav ul li{
-        margin:10px 3px;
-    }
-    nav ul li:hover{
-        background-color:black;
-    }
-    #bgMenu{
-        display:block;
-        margin:0 0 0 auto;
-    }
-    #container{
-        display:block;
-        width:50%;
-        margin:0 0 0 auto;
-        position:relative;
-    }
-    nav #container:hover ul{
-        display:block;
-        z-index:1;
-    }
-
-    #produits .produit{
-        width:90%;
-    }
-    #produits .produit img{
-        max-height:90px;
-    }
-    #cart .prodBox{
-        width:90%;
-    }
-    .crudBtns{
-        display:flex;
-        flex-direction:column;
-    }
-    main{
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-    }
-    main div div{
-        width:90%;
-    }
-    main #infoProduitCommande {
-        border-right:none;
-    }
-    #infoProduitCommande, #infoClientCommande{
-        width:90%;
-    }
-    form.createForm input, form.loginForm input{
-        width:90%;
-    }
-    #commandeInfo{
-        width:90%!important;
-    }
-    body div#backImg{
-        background-position:right top;
-    }
-    #categorieListe .cat{
-        width:90%;
-    }
-    body #categorieListe .cat div{
-        height:20vh;
-    }
-    div.panier-error-msg{
-        width:100%;
-    }
-
-    #produit{
-        flex-direction:column;
-    }
-    #produit img{
-        margin:0 auto;
-    }
-    #produit #prodInfo{
-        max-width:90%;
-        margin:0 auto;
-    }
-    #produit #prodInfo p{
-        margin:2% 0;
-    }
-    #btns{
-        width:100%;  
-    }
-    #btns .addBtn{
-        display:block;
-        margin:0 auto;
-    }
-
-    .prodBox{
-        flex-direction:column;
-        align-items:center;
-        width:100%;
-    }
-    .prodBox .infoBox{
-        max-width:90%;
-    }
-    .prodBox .infoBox p{
-        margin:1% 0;
-    }
-    .crudBtns{
-        width:100%;
-        align-items:center;
-    }
 }
