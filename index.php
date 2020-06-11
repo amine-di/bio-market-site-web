@@ -1,7 +1,7 @@
 <?php
 session_start();
 require('fonctions_log.php');
-log_requete('Consultation',  __FILE__, $_SERVER['REQUEST_URI']);
+log_requete('Consultation',  __FILE__);
 require('db/fonctions_db.php');
 $categories = getAllCategories();
 ?>
@@ -26,8 +26,13 @@ $categories = getAllCategories();
         <div id="backData">
             <h1>Bio Market</h1>
             <p><strong><i>Le magasin naturel</i></strong></p>
-            <a href="http://192.168.1.4/bio_market/views/creer.php" class="btn btn-success hover-opacity">Compte</a>
-            <a href="http://192.168.1.4/bio_market/views/login.php" class="btn btn-primary hover-opacity">Connexion</a>
+            <?php if (!isset($_SESSION['email'])) : ?>
+                <a href="http://192.168.1.4/bio_market/views/creer.php" class="btn btn-success hover-opacity">Compte</a>
+                <a href="http://192.168.1.4/bio_market/views/login.php" class="btn btn-primary hover-opacity">Connexion</a>
+            <?php else : ?>
+                <a href="http://192.168.1.4/bio_market/views/produits.php" class="btn btn-success hover-opacity">Produits</a>
+                <a href="http://192.168.1.4/bio_market/App/logout.php" class="btn btn-primary hover-opacity">Déconnexion</a>
+            <?php endif; ?>
         </div>
     </div>
     <div class="container">

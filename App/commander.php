@@ -17,7 +17,7 @@ if (isset($_SESSION['panier']) && isset($_SESSION['panierNum']) && isset($_SESSI
     $clientId = clientIdParEmail($_SESSION['email']);
     commander($rndId, $clientId['id'], $_SESSION['panierNum'], $numArticles, $_SESSION['prixTotal'], 'non_traite');
     require('../fonctions_log.php');
-    log_requete('Commande',  __FILE__, $_SERVER['REQUEST_URI']);
+    log_requete('Commande',  __FILE__);
 
     foreach ($_SESSION['panier'] as $prod) {
         produitCommande($prod['id_produit'], $prod['num'], ($prod['num'] * prixProduit($prod['id_produit'])), $rndId);

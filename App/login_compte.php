@@ -17,7 +17,7 @@ if (isset($_POST['loginBtn'])) {
             if ($statut['statut'] == 1) {
                 $_SESSION['email'] = $email;
                 require('../fonctions_log.php');
-                log_requete('Authentification',  __FILE__, $_SERVER['REQUEST_URI']);
+                log_requete('Authentification',  __FILE__);
                 header('Location: /bio_market/index.php');
             } else {
                 header('Location: /bio_market/views/Error404.php?errorMsg=Ce compte n\'a pas été validé');

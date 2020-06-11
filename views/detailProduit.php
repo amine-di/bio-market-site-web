@@ -1,7 +1,7 @@
 <?php
 session_start();
 require('../fonctions_log.php');
-log_requete('Consultation',  __FILE__, $_SERVER['REQUEST_URI']);
+log_requete('Consultation',  __FILE__);
 require('../db/fonctions_db.php');
 $id = $_GET['prod'];
 $produit = getProduitParId($id);
