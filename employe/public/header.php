@@ -7,7 +7,7 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="/bio_market/index.php">Acceuil</a></li>
+            <li class="nav-item"><a class="nav-link" href="/bio_market/employe/dashboard_employe.php">Acceuil</a></li>
             <?php
             if (!isset($_SESSION['cin'])) {
                 if ($_SERVER['REQUEST_URI'] !== '/bio_market/employe/dashboard_login.php') {
@@ -15,8 +15,8 @@
                 }
             } else {
                 echo '<li class="nav-item"><a class="nav-link" href="/bio_market/employe/stat_commande.php">Statistiques commandes</a></li>';
-                echo '<li class="nav-item"><a class="nav-link" href=#>Statistiques produits</a></li>';
-                echo '<li class="nav-item"><a class="nav-link" href=#>Statistiques clients</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="/bio_market/employe/stat_produit.php">Statistiques produits</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="/bio_market/employe/stat_client.php">Statistiques clients</a></li>';
                 echo '<li class="nav-item"><a class="nav-link" href="/bio_market/employe/app/deconnexion.php">Déconnexion</a></li>';
             }
             ?>

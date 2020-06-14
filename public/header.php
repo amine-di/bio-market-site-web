@@ -25,6 +25,7 @@
             }
             ?>
             <li class="nav-item"><a class="nav-link" href="/bio_market/views/livreur.php">Livreur</a></li>
+            <li class="nav-item"><a class="nav-link" href="/bio_market/employe/dashboard_employe.php">Employe</a></li>
         </ul>
     </div>
 </nav>
