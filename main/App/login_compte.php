@@ -1,0 +1,33 @@
+<?php
+session_start();
+require('../../db/fonctions_db.php');
+
+if (isset($_POST['loginBtn'])) {
+
+    $email = $_POST['email'];
+    $pwd = $_POST['pwd'];
+
+
+    if (!empty($email) && !empty($pwd)) {
+
+        $result = loginClient($email, $pwd);
+
+        if ($result == 1) {
+            $statut = verifierStatut($email);
+            if ($statut['statut'] == 1) {
+                $_SESSION['email'] = $email;
+                require('../../fonctions_log.php');
+                log_requete('Authentification',  __FILE__);
+                header('Location: /bio_market/index.php');
+            } else {
+                header('Location: /views/Error404.php?errorMsg=Ce compte n\'a pas été validé');
+            }
+        } else {
+            header('Location: /views/Error404.php?errorMsg=Ce compte n\'existe pas');
+        }
+    } else {
+        header('Location: /views/Error404.php?errorMsg=Veuillez remplir tous les champs SVP');
+    }
+} else {
+    header('Location: ../index.php');
+}

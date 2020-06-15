@@ -1,0 +1,4 @@
+Options All -Indexes
+ErrorDocument 403 http://BioMarket.com/index.php
+ErrorDocument 404 http://BioMarket.com/views/error404.php?errorMsg=Cette%20page%20n'existe%20pas
+
